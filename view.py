@@ -1,14 +1,25 @@
 from model import *
+
 def main():
-    print()
-
-if __name__ == "__main__":
-    menu_inicial()
-    escolha = int(input("Escolha uma opção:\n 1 - Cadastrar\n2 - Listar\n3 - Sair: "))
+    escolha = int(input("""  
+    ╔════════════════════════════════════════════════════════╗
+    ║                          MENU                          ║
+    ╠════════════════════════════════════════════════════════╣
+    ║ ▸ PREPARAÇÃO                                           ║
+    ║   [RJ] Registar Jogador      [IJ] Iniciar Jogo         ║
+    ╠════════════════════════════════════════════════════════╣
+    ║ ▸ TURNO                                                ║
+    ║   [LD] Lançar Dados          [FT] Finalizar Turno      ║
+    ╠════════════════════════════════════════════════════════╣
+    ║ ▸ CONSTRUIR                                            ║
+    ║   [CE] Construir Estrada     [CA] Construir Aldeia     ║
+    ║   [CC] Construir Cidade      [TR] Trocar Recursos      ║
+    ╠════════════════════════════════════════════════════════╣
+    ║ ▸ JOGO                                                 ║
+    ║   [G ] Gravar                [L ] Ler                  ║
+    ║   [VT] Ver Tabuleiro         [EE] Estado do Jogo       ║
+    ║   [AJ] Ajuda (regras)        [S ] Sair                 ║
+    ╚════════════════════════════════════════════════════════╝
     
-
-    match escolha:
-        case 1:
-            nome = input("Digite seu nome\n")
-        case _:
-            print("opcao invalida")
+    """))
+    
